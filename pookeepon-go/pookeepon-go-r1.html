@@ -55,7 +55,9 @@
 					'<a href=http://jaanga.github.io/ > &#x24D8; </a>' +
 				'</h2>' +
 				'<div id=info ></div>' +
-
+					'<p title="Press spacebar or click in window to stop." >' +
+						'<input type=checkbox id=chkRotate onchange=controls.autoRotate=!controls.autoRotate checked > Rotation ' +
+					'</p>'  +
 			'';
 
 		}
@@ -64,12 +66,14 @@
 		stats.domElement.style.cssText = `position: absolute; right: 0; top: 0; z-index: 100; `;
 		document.body.appendChild( stats.domElement );
 
-		window.addEventListener( 'resize', onWindowResize, false );
+
+
 
 		renderer = new THREE.WebGLRenderer( {  alpha: 1, antialias: true }  );
 //		renderer.setClearColor( 0xf0f0f0 );
 //		renderer.setPixelRatio( window.devicePixelRatio );
 		renderer.setSize( window.innerWidth, window.innerHeight );
+		renderer.shadowMap.enabled = true;
 		document.body.appendChild( renderer.domElement );
 
 		camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 1000 );
@@ -81,20 +85,38 @@
 
 		scene = new THREE.Scene();
 
-		var light = new THREE.DirectionalLight();
-		light.position.set( -100, 100, 100 );
-		scene.add( light );
+		lightAmbient = new THREE.AmbientLight( 0x444444 );
+		scene.add( lightAmbient );
+
+		var lightDirectional = new THREE.DirectionalLight();
+		lightDirectional.position.set( 400, 300, 300 );
+
+		var d = 100
+		lightDirectional.shadow.camera.left = -d;
+		lightDirectional.shadow.camera.right = d;
+		lightDirectional.shadow.camera.top = d;
+		lightDirectional.shadow.camera.bottom = -d;
+
+		lightDirectional.shadow.camera.near = 0;
+		lightDirectional.shadow.camera.far = 8 * d;
+
+		lightDirectional.castShadow = true;
+		scene.add( lightDirectional );
 
 // helpers
 
-		geometry = new THREE.BoxGeometry( 100, 20, 100 );
+		geometry = new THREE.BoxGeometry( 200, 20, 200 );
 		material = new THREE.MeshPhongMaterial();
 		groundPlane = new THREE.Mesh( geometry, material );
 		groundPlane.position.set( 0, -100, 0 );
 		scene.add( groundPlane );
 
-		var gridHelper = new THREE.GridHelper( 50, 10 );
-		gridHelper.position.set( 0, 1, 0 );
+
+		groundPlane.castShadow = true;
+		groundPlane.receiveShadow = true;
+
+		var gridHelper = new THREE.GridHelper( 100, 10 );
+		gridHelper.position.set( 0, 10, 0 );
 		groundPlane.add( gridHelper );
 
 		var axisHelper = new THREE.AxisHelper( 50 );
@@ -107,6 +129,10 @@
 		loadOBJFileByURL( fileName );
 
 		toggleBackgroundGradient();
+
+		window.addEventListener( 'resize', onWindowResize, false );
+		renderer.domElement.addEventListener( 'click', function() {  controls.autoRotate = false; chkRotate.checked = false; }, false );
+		window.addEventListener( 'keyup', onKeyUp, false );
 
 	}
 
@@ -134,29 +160,36 @@
 
 		object = obj;
 
-		bbh = new THREE.BoxHelper( object );
-//		bbh.update();
-
-//console.log( '\nbbh', bbh );
-
-		dis = bbh.position.distanceTo( bbh.scale );
-		size = object.scale.y * 80 / dis;
-
-// console.log( dis,  '\nsize', size, '\ndis' );
-
-//		object.scale.set( size, size, size );
 		object.scale.multiplyScalar( 0.2 );
 
+		for ( var i = 0; i < object.children.length; i++ ) {
+
+			part = object.children[ i ];
+
+			part.geometry.dynamic = true;
+
+			part.geometry.computeFaceNormals();
+			part.geometry.computeVertexNormals();
+
+			part.geometry.elementsNeedUpdate = true;
+			part.geometry.verticesNeedUpdate = true;
+			part.geometry.normalsNeedUpdate = true;
+			part.geometry.buffersNeedUpdate = true;
+			part.geometry.uvsNeedUpdate = true;
+
+			part.material.color.r = Math.random();
+			part.material.color.g = Math.random();
+			part.material.color.b = Math.random();
+			part.material.needsUpdate = true;
+
+		part.updateMatrixWorld();
+		part.geometry.computeBoundingSphere();
+			part.castShadow = true;
+			part.receiveShadow = true;
+
+		}
 
 		scene.add( object );
-
-//		bbh = new THREE.BoundingBoxHelper( object );
-//		bbh.update();
-
-		scene.add( bbh );
-
-//		groundPlane.position.y = bbh.box.min.y - 1;
-
 
 	}
 
@@ -173,6 +206,24 @@
 				pt() + 'px ' + pt() + 'px, #' + col() + ' 0%, #' + col() + ' 50%, #' + col() + ' 100% ) ';
 
 	}
+
+
+
+	function onKeyUp ( event ) {
+
+//console.log( 'key', event.keyCode );
+
+		controls.enableKeys = false;
+		event.preventDefault();
+
+		switch( event.keyCode ) {
+
+			case 32: controls.autoRotate = !controls.autoRotate; chkRotate.checked = controls.autoRotate; break; // space bar
+
+		}
+
+	}
+
 
 	function onWindowResize() {
 
