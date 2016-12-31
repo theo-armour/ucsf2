@@ -30,7 +30,7 @@ I started coding this piece the day of my hip replacement surgery - just to show
 
 Click on the files button and you can load more detailed files or you can view the scan of an artichoke
 
-<iframe src=http://jaanga.github.io/brainofrichard/ width=800 height=500 ></iframe>
+<iframe src=https://jaanga.github.io/brainofrichard/ width=800 height=500 ></iframe>
 
 
 
