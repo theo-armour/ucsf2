@@ -9,17 +9,19 @@
 ===
 
 
-Ruminations and code snippets relating to a variety of aspects regarding [UCSF]( https://ucsf.edu )
+The ruminations and code snippets of a patient that relate to [UCSF]( https://ucsf.edu )
 
 
 ## See [Issues]( https://github.com/theo-armour/ucsf2/issues )
 
-## 2016 PooKeepOn Go
+## December 2016 PooKeepOn Go
 
-Coming soon...
+Relating to a stay at 505 Parnassus after a bout of melena
+
+<iframe src=./pookeepon-go/latest/index.html width=800 height=500 ></iframe>
 
 
-## 2015 [Femur Heart UCSF]( ./femur-heart-ucsf/index.html )
+## August 2015 [Femur Heart UCSF]( ./femur-heart-ucsf/index.html )
 
 I started coding this piece the day of my hip replacement surgery - just to show I could still code.
 
