@@ -14,12 +14,13 @@ The ruminations and code snippets of a patient that relate to [UCSF]( https://uc
 
 ## See [Issues]( https://github.com/theo-armour/ucsf2/issues )
 
-## December 2016 PooKeepOn Go
+## December 2016 [PooKeepOn Go]( https://theo-armour.github.io/ucsf2/pookeepon-go/latest/index.html )
 
 Relating to a stay at 505 Parnassus after a bout of melena
 
 <iframe src=./pookeepon-go/latest/index.html width=800 height=500 ></iframe>
 
+[PooKeepOn README]( https://theo-armour.github.io/ucsf2/pookeepon-go/index.html )
 
 ## August 2015 [Femur Heart UCSF]( ./femur-heart-ucsf/index.html )
 
