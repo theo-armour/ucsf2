@@ -2,7 +2,7 @@
 <html lang=en >
 <head>
 <meta charset=utf-8 >
-<title>PooKeeOn-Go R3</title>
+<title>PooKeeOn-Go R4</title>
 <meta name=viewport content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' >
 <meta name=description content='' >
 <meta name=keywords content='WebGL,Three.js,JavaScript,GitHub,FOSS,3D,STEM' >
@@ -22,6 +22,9 @@
 // Copyright 2016 Jaanga authors ~ MIT license
 
 	var fileName1 = 'digestive color.obj';
+
+	var images = [ 'im2.jpg', 'im3.jpg', 'im5.jpg', 'im9.jpg', 'im11.jpg', 'im15.jpg' ];
+	var url = 'https://jaanga.github.io/cookbook/textures/';
 
 	var object;
 
@@ -258,9 +261,32 @@
 
 			part.material.needsUpdate = true;
 
+
+
 		}
 
 		scene.add( object );
+
+
+		loader = new THREE.TextureLoader();
+		loader.crossOrigin = 'anonymous';
+		loader.load(
+
+//			'http://i.imgur.com/RPv6ofy.jpg',
+			'water.jpg',
+
+			function ( texture ) {
+
+				object.children.forEach( function ( child ) {
+
+						child.material.map = texture;
+						child.material.needsUpdate = true;
+
+				} );
+
+			}
+
+		);
 
 	}
 

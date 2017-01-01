@@ -2,7 +2,7 @@
 <html lang=en >
 <head>
 <meta charset=utf-8 >
-<title>PooKeeOn-Go R3</title>
+<title>PooKeeOn-Go R6</title>
 <meta name=viewport content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' >
 <meta name=description content='' >
 <meta name=keywords content='WebGL,Three.js,JavaScript,GitHub,FOSS,3D,STEM' >
@@ -23,9 +23,20 @@
 
 	var fileName1 = 'digestive color.obj';
 
+	var images = [ 'im2.jpg', 'im3.jpg', 'im5.jpg', 'im9.jpg', 'im11.jpg', 'im15.jpg' ];
+	var url = 'https://jaanga.github.io/cookbook/textures/';
+
 	var object;
 
 	var ang = 0;
+
+//		video = document.body.appendChild( document.createElement( 'video' ) );
+
+		video = document.createElement( 'video' );
+		video.src = "sintel.ogv";
+		video.type = "video/ogg";
+		video.codecs = "theora, vorbis";
+		video.autoplay = true;
 
 
 	var stats, renderer, scene, camera, controls, mesh;
@@ -199,6 +210,12 @@
 
 // assets
 
+		texture = new THREE.Texture( video );
+		texture.minFilter = THREE.LinearFilter;
+		texture.magFilter = THREE.LinearFilter;
+		texture.format = THREE.RGBFormat;
+		texture.generateMipmaps = false;
+
 		fileName = location.hash.length ? location.hash.slice( 1 ) : fileName1;
 
 		loadOBJFileByURL( fileName );
@@ -249,13 +266,17 @@
 			geometry.computeVertexNormals();
 			part.geometry = new THREE.BufferGeometry().fromGeometry( geometry );
 
-			part.material.color.r = Math.random();
-			part.material.color.g = Math.random();
-			part.material.color.b = Math.random();
+//			part.material.color.r = Math.random();
+//			part.material.color.g = Math.random();
+//			part.material.color.b = Math.random();
 
 			part.castShadow = true;
 			part.receiveShadow = true;
 
+			part.material.needsUpdate = true;
+
+
+			part.material.map = texture;
 			part.material.needsUpdate = true;
 
 		}
@@ -327,6 +348,10 @@
 		lightDirectional.position.x = 200 * Math.cos( ( ang++ ) / 100  );
 		lightDirectional.position.z = 200 * Math.sin( ( ang ) / 100  );
 
+		if ( video.readyState === video.HAVE_ENOUGH_DATA ) {
+			// imageContext.drawImage( video, 0, 0 );
+			if ( texture ) texture.needsUpdate = true;
+		}
 	}
 
 </script>
