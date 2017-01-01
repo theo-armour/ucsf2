@@ -4,9 +4,10 @@
 <meta charset=utf-8 >
 <title>PooKeeOn-Go R6</title>
 <meta name=viewport content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' >
-<meta name=description content='' >
-<meta name=keywords content='WebGL,Three.js,JavaScript,GitHub,FOSS,3D,STEM' >
-<meta name=date content='2016-12-31' >
+<meta name=description content='Load "sintel.ogv" video and apply as a texture to all six organs.
+ Warnings: Plays sound. May not work in mobile device browsers.' >
+<meta name=keywords content='UCSF, colo-rectal surgery, abdomen, WebGL, Three.js, JavaScript, GitHub, FOSS, 3D, STEM' >
+<meta name=date content='2017-01-01' >
 </head>
 <body>
 <!--
@@ -25,22 +26,19 @@
 
 	var images = [ 'im2.jpg', 'im3.jpg', 'im5.jpg', 'im9.jpg', 'im11.jpg', 'im15.jpg' ];
 	var url = 'https://jaanga.github.io/cookbook/textures/';
-
 	var object;
-
 	var ang = 0;
+	var video;
+//	video = document.body.appendChild( document.createElement( 'video' ) );
+	video = document.createElement( 'video' );
+	video.src = "sintel.ogv";
+	video.type = "video/ogg";
+	video.codecs = "theora, vorbis";
+	video.autoplay = true;
 
-//		video = document.body.appendChild( document.createElement( 'video' ) );
-
-		video = document.createElement( 'video' );
-		video.src = "sintel.ogv";
-		video.type = "video/ogg";
-		video.codecs = "theora, vorbis";
-		video.autoplay = true;
-
+	var ground, gridHelper, axisHelper;
 
 	var stats, renderer, scene, camera, controls, mesh;
-	var ground, gridHelper, axisHelper;
 
 
 	init();
@@ -165,11 +163,6 @@
 		scene.add( lights[ 1 ] );
 		scene.add( lights[ 2 ] );
 
-/*
-		lightAmbient = new THREE.AmbientLight( 0x888888 );
-		scene.add( lightAmbient );
-*/
-
 		lightDirectional = new THREE.DirectionalLight();
 		lightDirectional.position.set( 400, 300, 300 );
 
@@ -231,19 +224,26 @@
 
 	function loadOBJFileByURL( fileName ) {
 
+		var loader, b = '<br>';
+
 		scene.remove( object );
 
-		var loader = new THREE.OBJLoader();
+		loader = new THREE.OBJLoader();
 		loader.crossOrigin = 'anonymous';
 		loader.load( fileName, function ( obj ) {
 
 			addObject( obj );
 
-//			if ( window.self === window.top ) {
-
-				menuInfo.innerHTML = 'name: ' + fileName.slice( fileName.lastIndexOf( '/' ) + 1 ) + '<br>';
-
-//			}
+			menuInfo.innerHTML =
+				'Description:' + b +
+				document.head.querySelector("[name=description]").content + b + b +
+				'Keywords:' + b +
+				document.head.querySelector("[name=keywords]").content.replace( /,/g, ', ' ) + b + b +
+				'Latest Update:' + b +
+				document.head.querySelector("[name=date]").content + b + b +
+				'File Name:' + b +
+				fileName.slice( fileName.lastIndexOf( '/' ) + 1 ) +
+			b;
 
 		} );
 
@@ -286,15 +286,21 @@
 	}
 
 
+
 	function toggleWireframe() {
 
-		object.children.forEach( function ( child ) {
+		scene.traverse( function ( child ) {
+
+			if ( child instanceof THREE.Mesh ) {
 
 				child.material.wireframe = chkWire.checked;
+
+			}
 
 		} );
 
 	}
+
 
 	function toggleBackgroundGradient() {
 
@@ -308,8 +314,6 @@
 				pt() + 'px ' + pt() + 'px, #' + col() + ' 0%, #' + col() + ' 50%, #' + col() + ' 100% ) ';
 
 	}
-
-
 
 
 	function onKeyUp ( event ) {
@@ -349,9 +353,11 @@
 		lightDirectional.position.z = 200 * Math.sin( ( ang ) / 100  );
 
 		if ( video.readyState === video.HAVE_ENOUGH_DATA ) {
-			// imageContext.drawImage( video, 0, 0 );
+
 			if ( texture ) texture.needsUpdate = true;
+
 		}
+
 	}
 
 </script>

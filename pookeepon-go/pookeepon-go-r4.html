@@ -4,9 +4,9 @@
 <meta charset=utf-8 >
 <title>PooKeeOn-Go R4</title>
 <meta name=viewport content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' >
-<meta name=description content='' >
-<meta name=keywords content='WebGL,Three.js,JavaScript,GitHub,FOSS,3D,STEM' >
-<meta name=date content='2016-12-31' >
+<meta name=description content='Load file and apply random colors and a single texture to all parts. '>
+<meta name=keywords content='UCSF,colo-rectal surgery,abdomen,WebGL,Three.js,JavaScript,GitHub,FOSS,3D,STEM' >
+<meta name=date content='2017-01-01' >
 </head>
 <body>
 <!--
@@ -22,17 +22,12 @@
 // Copyright 2016 Jaanga authors ~ MIT license
 
 	var fileName1 = 'digestive color.obj';
-
-	var images = [ 'im2.jpg', 'im3.jpg', 'im5.jpg', 'im9.jpg', 'im11.jpg', 'im15.jpg' ];
-	var url = 'https://jaanga.github.io/cookbook/textures/';
-
 	var object;
-
 	var ang = 0;
 
+	var ground, gridHelper, axisHelper;
 
 	var stats, renderer, scene, camera, controls, mesh;
-	var ground, gridHelper, axisHelper;
 
 
 	init();
@@ -70,7 +65,7 @@
 				'<h2>' +
 					'<a href=http://theo-armour.github.io/ucsf2 title="thanks to UCSF - a leading university dedicated to promoting health worldwide through advanced biomedical research, graduate-level education in the life sciences and health professions, and excellence in patient care" > &#x2766 </a><br>' +
 					'<a href="" title="Click here to refresh this page" >' + document.title + '</a>' +
-					' ~ <a href=../index.html#README.md onmouseover=popHelp.style.display=""; onmouseout=popHelp.style.display="none"; > &#x24D8; </a>' +
+					' ~ <a href=./index.html#README.md onmouseover=popHelp.style.display=""; onmouseout=popHelp.style.display="none"; > &#x24D8; </a>' +
 				'</h2>' +
 				'<div class=popUp id=popHelp style=display:none; ><p>Hi there!</p>Click the i-in-circle, info icon for latest updates.</div>' +
 
@@ -108,7 +103,7 @@
 
 				'<hr>' +
 				'<center><a href=javascript:menu.scrollTop=0; style=text-decoration:none; onmouseover=pop2.style.display=""; onmouseout=pop2.style.display="none"; ><h1> &#x2766 <h1></a></center>' +
-				'<div class=popUp id=pop2 style=display:none;bottom:10px; >Jaanga - your 3D happy place.<br>Click here to return to the top of the page</div>' +
+				'<div class=popUp id=pop2 style=display:none;bottom:100px; >Jaanga - your 3D happy place.<br>Click here to return to the top of the page</div>' +
 
 			'</div>' +
 
@@ -140,7 +135,6 @@
 
 		scene = new THREE.Scene();
 
-
 		var ambientLight = new THREE.AmbientLight( 0x555555 );
 		scene.add( ambientLight );
 
@@ -157,15 +151,10 @@
 		scene.add( lights[ 1 ] );
 		scene.add( lights[ 2 ] );
 
-/*
-		lightAmbient = new THREE.AmbientLight( 0x888888 );
-		scene.add( lightAmbient );
-*/
-
 		lightDirectional = new THREE.DirectionalLight();
 		lightDirectional.position.set( 400, 300, 300 );
 
-		var d = 120
+		var d = 120;
 		lightDirectional.shadow.camera.left = -d;
 		lightDirectional.shadow.camera.right = d;
 		lightDirectional.shadow.camera.top = d;
@@ -217,19 +206,26 @@
 
 	function loadOBJFileByURL( fileName ) {
 
+		var loader, b = '<br>';
+
 		scene.remove( object );
 
-		var loader = new THREE.OBJLoader();
+		loader = new THREE.OBJLoader();
 		loader.crossOrigin = 'anonymous';
 		loader.load( fileName, function ( obj ) {
 
 			addObject( obj );
 
-//			if ( window.self === window.top ) {
-
-				menuInfo.innerHTML = 'name: ' + fileName.slice( fileName.lastIndexOf( '/' ) + 1 ) + '<br>';
-
-//			}
+			menuInfo.innerHTML =
+				'Description:' + b +
+				document.head.querySelector("[name=description]").content + b + b +
+				'Keywords:' + b +
+				document.head.querySelector("[name=keywords]").content.replace( /,/g, ', ' ) + b + b +
+				'Latest Update:' + b +
+				document.head.querySelector("[name=date]").content + b + b +
+				'File Name:' + b +
+				fileName.slice( fileName.lastIndexOf( '/' ) + 1 ) +
+			b;
 
 		} );
 
@@ -261,8 +257,6 @@
 
 			part.material.needsUpdate = true;
 
-
-
 		}
 
 		scene.add( object );
@@ -293,13 +287,18 @@
 
 	function toggleWireframe() {
 
-		object.children.forEach( function ( child ) {
+		scene.traverse( function ( child ) {
+
+			if ( child instanceof THREE.Mesh ) {
 
 				child.material.wireframe = chkWire.checked;
+
+			}
 
 		} );
 
 	}
+
 
 	function toggleBackgroundGradient() {
 
@@ -313,8 +312,6 @@
 				pt() + 'px ' + pt() + 'px, #' + col() + ' 0%, #' + col() + ' 50%, #' + col() + ' 100% ) ';
 
 	}
-
-
 
 
 	function onKeyUp ( event ) {

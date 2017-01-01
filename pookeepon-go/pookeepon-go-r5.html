@@ -4,9 +4,9 @@
 <meta charset=utf-8 >
 <title>PooKeeOn-Go R5</title>
 <meta name=viewport content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' >
-<meta name=description content='' >
-<meta name=keywords content='WebGL,Three.js,JavaScript,GitHub,FOSS,3D,STEM' >
-<meta name=date content='2016-12-31' >
+<meta name=description content='Load and apply six different individual images as textures to each of the six organs.' >
+<meta name=keywords content='UCSF,colo-rectal surgery,abdomen,WebGL,Three.js,JavaScript,GitHub,FOSS,3D,STEM' >
+<meta name=date content='2017-01-01' >
 </head>
 <body>
 <!--
@@ -27,12 +27,11 @@
 	var url = 'https://jaanga.github.io/cookbook/textures/';
 
 	var object;
-
 	var ang = 0;
 
+	var ground, gridHelper, axisHelper;
 
 	var stats, renderer, scene, camera, controls, mesh;
-	var ground, gridHelper, axisHelper;
 
 
 	init();
@@ -157,15 +156,10 @@
 		scene.add( lights[ 1 ] );
 		scene.add( lights[ 2 ] );
 
-/*
-		lightAmbient = new THREE.AmbientLight( 0x888888 );
-		scene.add( lightAmbient );
-*/
-
 		lightDirectional = new THREE.DirectionalLight();
 		lightDirectional.position.set( 400, 300, 300 );
 
-		var d = 120
+		var d = 120;
 		lightDirectional.shadow.camera.left = -d;
 		lightDirectional.shadow.camera.right = d;
 		lightDirectional.shadow.camera.top = d;
@@ -217,19 +211,26 @@
 
 	function loadOBJFileByURL( fileName ) {
 
+		var loader, b = '<br>';
+
 		scene.remove( object );
 
-		var loader = new THREE.OBJLoader();
+		loader = new THREE.OBJLoader();
 		loader.crossOrigin = 'anonymous';
 		loader.load( fileName, function ( obj ) {
 
 			addObject( obj );
 
-//			if ( window.self === window.top ) {
-
-				menuInfo.innerHTML = 'name: ' + fileName.slice( fileName.lastIndexOf( '/' ) + 1 ) + '<br>';
-
-//			}
+			menuInfo.innerHTML =
+				'Description:' + b +
+				document.head.querySelector("[name=description]").content + b + b +
+				'Keywords:' + b +
+				document.head.querySelector("[name=keywords]").content.replace( /,/g, ', ' ) + b + b +
+				'Latest Update:' + b +
+				document.head.querySelector("[name=date]").content + b + b +
+				'File Name:' + b +
+				fileName.slice( fileName.lastIndexOf( '/' ) + 1 ) +
+			b;
 
 		} );
 
@@ -237,6 +238,8 @@
 
 
 	function addObject( obj ) {
+
+		var object, part, geometry, loader;
 
 		object = obj;
 
@@ -246,21 +249,20 @@
 
 			part = object.children[ i ];
 
-			var geometry = new THREE.Geometry().fromBufferGeometry( part.geometry );
+			geometry = new THREE.Geometry().fromBufferGeometry( part.geometry );
 			geometry.computeFaceNormals();
 			geometry.mergeVertices();
 			geometry.computeVertexNormals();
 			part.geometry = new THREE.BufferGeometry().fromGeometry( geometry );
 
-			part.material.color.r = Math.random();
-			part.material.color.g = Math.random();
-			part.material.color.b = Math.random();
+//			part.material.color.r = Math.random();
+//			part.material.color.g = Math.random();
+//			part.material.color.b = Math.random();
 
 			part.castShadow = true;
 			part.receiveShadow = true;
 
 			part.material.needsUpdate = true;
-
 
 			loader = new THREE.TextureLoader();
 			loader.crossOrigin = 'anonymous';
@@ -277,8 +279,7 @@
 
 			);
 
-			loader = new THREE.TextureLoader();
-			loader.crossOrigin = 'anonymous';
+
 			loader.load(
 
 				url + images[ 1 ],
@@ -293,8 +294,6 @@
 			);
 
 
-			loader = new THREE.TextureLoader();
-			loader.crossOrigin = 'anonymous';
 			loader.load(
 
 				url + images[ 2 ],
@@ -348,13 +347,7 @@
 
 			);
 
-
-
 		}
-
-
-
-
 
 		scene.add( object );
 
@@ -363,13 +356,18 @@
 
 	function toggleWireframe() {
 
-		object.children.forEach( function ( child ) {
+		scene.traverse( function ( child ) {
+
+			if ( child instanceof THREE.Mesh ) {
 
 				child.material.wireframe = chkWire.checked;
+
+			}
 
 		} );
 
 	}
+
 
 	function toggleBackgroundGradient() {
 

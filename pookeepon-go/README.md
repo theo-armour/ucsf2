@@ -9,16 +9,48 @@
 [PooKeepOn-Go Read Me]( https://theo-armour.github.io/ucsf2/pookeepon-go/index.html#README.md )
 ===
 
+<iframe src=./latest/index.html width=800 height=500 ></iframe>
 
-[PooKeepOn-Go R1]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r1.html )
+### [PooKeepOn-Go R6]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r6.html )
 
-[PooKeepOn-Go R2]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r2.html )
+* Load 'sintel.ogv' video and apply as a texture to all six organs
+* Warnings: Plays sound. May not work in mobile device browsers
 
-[PooKeepOn-Go R3]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r3.html )
+![]( water.jpg =100x* )
 
-[PooKeepOn-Go R4]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r4.html )
+### [PooKeepOn-Go R5]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r5.html )
 
-[PooKeepOn-Go R5]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r5.html )
+* Load and apply six different individual images as textures to each of the six organs
 
-[PooKeepOn-Go R6]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r6.html )
 
+### [PooKeepOn-Go R4]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r4.html )
+
+* Load 'water.jpg' image and apply as a texture to all six organs
+
+![]( water.jpg =100x* )
+
+### [PooKeepOn-Go R3]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r3.html )
+
+* Add hamburger menu
+* Add toggles for gradient backround, visibility and rotation
+* Add 'About' info
+
+
+### [PooKeepOn-Go R2]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r2.html )
+
+* Add merge vertices and calculate facae normals to enable smooth shading
+* Add Direction light rotates around model
+* Add three point lights and adjust intensities
+
+
+### [PooKeepOn-Go R1]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r1.html )
+
+* Apply random color with Phong shading to each organ
+* Load unjosnav's $4.99 a[Digestive System Color]( http://www.turbosquid.com/3d-models/digestive-colors-3d-model/880335 ) abdomen model with six organs
+	* Models includes to face normals data Therefore no smooth shading
+* Add basic rotation
+* Add basic lights and shows capability
+* Add ground plane, axis and grid
+* Adds gradient backround
+* Load basic Three.js menu template
+* 2016-12-19
