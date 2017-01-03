@@ -14,27 +14,31 @@ The ruminations and code snippets of a patient that relate to [UCSF]( https://uc
 
 ## See also [Theo Armour >> UCSF2 >> Issues]( https://github.com/theo-armour/ucsf2/issues )
 * A variety of posts relating to my various experiences of UCSF
-* All posts are complimentary of actual care-givers but may be less complimentary about more bureaucratic aspects of running a large hospital system
-
-***
-
-_Below are several 3D visualization projects that relate to UCSF_
+* All posts are complimentary of actual care-givers but may be less complimentary about the more bureaucratic aspects of operating a large hospital system
 
 <br>
 
-## December 2016 [PooKeepOn Go]( https://theo-armour.github.io/ucsf2/pookeepon-go/latest/index.html )
+
+***
+
+_Below are several 3D visualization projects that relate to displaying medical data with free, open source, entry level software code_
+
+<br>
+
+## December 2016 [PooKeepOn Go]( https://theo-armour.github.io/ucsf2/pookeepon-go/latest/index.html ) &laquo; full screen
 
 <iframe src=./pookeepon-go/latest/index.html width=800 height=500 ></iframe>
 
 [PooKeepOn README]( https://theo-armour.github.io/ucsf2/pookeepon-go/index.html )
 
 * Relating to a stay at 505 Parnassus after a bout of melena
+* A work-in-progress. Much more, heh heh, in the pipeline
 
 <br>
 
 ***
 
-## August 2015 [Femur Heart UCSF]( ./femur-heart-ucsf/index.html )
+## August 2015 [Femur Heart UCSF]( ./femur-heart-ucsf/index.html ) &laquo; full screen
 
 <iframe src=./femur-heart-ucsf/index.html width=800 height=500 ></iframe>
 
@@ -47,7 +51,7 @@ _Below are several 3D visualization projects that relate to UCSF_
 
 ***
 
-## 2012 [Brain of Richard]( http://jaanga.github.io/brainofrichard/ )
+## 2012 [Brain of Richard]( http://jaanga.github.io/brainofrichard/ ) &laquo; full screen
 
 <iframe src=https://jaanga.github.io/brainofrichard/ width=800 height=500 ></iframe>
 

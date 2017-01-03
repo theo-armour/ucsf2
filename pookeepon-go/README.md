@@ -15,11 +15,12 @@
 
 * Load 'sintel.ogv' video and apply as a texture to all six organs
 * Warnings: Plays sound. May not work in mobile device browsers
-
+* Slight variation of R4
 
 ### [PooKeepOn-Go R5]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r5.html )
 
 * Load and apply six different individual images - see below - as textures to each of the six organs
+* Slight variation of R4
 
 ![]( https://jaanga.github.io/cookbook/textures/im1.jpg =100x* )
 ![]( https://jaanga.github.io/cookbook/textures/im3.jpg =100x* )
@@ -77,7 +78,7 @@ patterns are descriptions of common problems and proposal for the solutions that
 
 -->
 
-The development of the overall concept is still at an early stage. The following are some prelimary notes/thoughts._
+_The development of the overall concept is still at an early stage. The following are some prelimary notes/thoughts._
 
 There's a zillion images of other people's anatomy, but you want to see the images of *your* anatomy.
 
@@ -149,7 +150,7 @@ There's a lot more in the works
 Future stage include:
 
 * Trace a path inside the organs that can be used as a camera track
-* Devise PoKeepOns, HollyGoLightlies, Polypnesias and other game characters
+* Devise PooKeepOns, HollyGoLightlies, Polypnesias and other game characters
 * Link to controller
 	* https://www.amazon.com/gp/product/B003ZSN600
 * Acquire higher quaility 3D models
@@ -218,14 +219,18 @@ GitHub
 
 ## Change Log
 
+### 2017-01-03
+
+* Update read me
+
 ### 2017-01-01
 
 * First commit
-* Update Read Me
+* Update read me
 
 
 ***
 
-<center title='Jaanga ~ your 3D happy place' >
-# <a href=javascript:window.scrollTo(0,0); style=text-decoration:none; > ❦ </a>
+<center>
+![]( favicon.ico )
 </center>
