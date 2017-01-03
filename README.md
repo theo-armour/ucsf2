@@ -23,6 +23,8 @@ The ruminations and code snippets of a patient that relate to [UCSF]( https://uc
 
 _Below are several 3D visualization projects that relate to displaying medical data with free, open source, entry level software code_
 
+_You can use your point device or fingers to zoom, pan aa=nd rotate each project._
+
 <br>
 
 ## December 2016 [PooKeepOn Go]( https://theo-armour.github.io/ucsf2/pookeepon-go/latest/index.html ) &laquo; full screen
