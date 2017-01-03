@@ -17,7 +17,6 @@
 * Warnings: Plays sound. May not work in mobile device browsers
 
 
-
 ### [PooKeepOn-Go R5]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r5.html )
 
 * Load and apply six different individual images - see below - as textures to each of the six organs
@@ -34,6 +33,7 @@
 ### [PooKeepOn-Go R4]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r4.html )
 
 * Load 'water.jpg' image and apply as a texture to all six organs
+* The current 'base' version - r5 and r6 are simple variations on this release
 
 ![]( water.jpg =100x* )
 
@@ -79,15 +79,17 @@ patterns are descriptions of common problems and proposal for the solutions that
 
 The development of the overall concept is still at an early stage. The following are some prelimary notes/thoughts._
 
-There's a zillion images of other people's anatomy, but you want to see the images of your anatomy.
+There's a zillion images of other people's anatomy, but you want to see the images of *your* anatomy.
 
-There's a ton of anatomy tools for the well funded professional, but few tools for the penniless gifted amateur
+There's a ton of anatomy tools for the well funded professional, but few tools for the penniless gifted amateur.
 
 Beauty is not skin deep. What's inside may well be even more beautiful that what's outside.
 
 Diseased parts of your anatomy have their own beauty.
 
 How can you access this beauty?
+
+How can you internalize what's going on inside you?
 
 ***
 
@@ -115,12 +117,20 @@ MatLab, _Grey's Anatomy_ and the GE Revolution CT scanner do not jump out at you
 
 Can we somehow spread out your innards over the artist's mixing tray, and have this palette give rise to new works of art?
 
+***
+
+And it's free. And works on your phone or tablet.
+
+Nothing to download or install.
+
+It just works.
 
 ### Mission
 <!-- a statement of a rationale, applicable now as well as in the future -->
 
 * To create 3D tools for anatomy visualization that beginner coders can use
 * To create 3D anatomy software tools that could be useful at hackathons, maker fairs and tech shops
+* To build everything as free, open source software
 
 
 ### Vision
