@@ -107,7 +107,7 @@
 		info = document.body.appendChild( document.createElement( 'div' ) );
 		info.style.cssText = 'margin: 0 20px; position: absolute; ';
 		info.innerHTML = '<h2><a href="" >' + document.title + '</a> - ' +
-			'<a id=i href=https://github.com/theo-armour/theo-armour.github.io/tree/master/ucsf/readme-reader.html >&#x24D8;</a>' +
+			'<a id=i href=https://github.com/theo-armour/theo-armour.github.io/tree/master/ucsf >&#x24D8;</a>' +
 			'</h2>' +
 			'<div id=msg ></div>' +
 		'';
@@ -207,7 +207,7 @@
 
 		loader.load( fileName2 + '.obj', fileName2 + '.mtl', function ( object ) {
 
-			femur = object;			
+			femur = object;
 
 			femur.traverse( function ( child ) {
 
@@ -250,8 +250,8 @@
 			//bevelThickness: 5,
 			//bevelSize: 5,
 			//bend: true,
-			//bendPath: aBendPath  
-		});	
+			//bendPath: aBendPath
+		});
 
 		geometry.applyMatrix( new THREE.Matrix4().makeTranslation( -17, 7, 0 ) );
 
@@ -270,8 +270,8 @@
 			//bevelThickness: 5,
 			//bevelSize: 5,
 			//bend: true,
-			//bendPath: aBendPath  
-		});	
+			//bendPath: aBendPath
+		});
 
 
 		geometry.merge ( geometry2 )
