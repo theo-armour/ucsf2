@@ -41,7 +41,7 @@
 ### [PooKeepOn-Go R3]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r3.html )
 
 * Add hamburger menu
-* Add toggles for gradient backround, visibility and rotation
+* Add toggles for gradient background, visibility and rotation
 * Add 'About' info
 
 
@@ -55,12 +55,12 @@
 ### [PooKeepOn-Go R1]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r1.html )
 
 * Apply random color with Phong shading to each organ
-* Load unjosnav's $4.99 a[Digestive System Color]( http://www.turbosquid.com/3d-models/digestive-colors-3d-model/880335 ) abdomen model with six organs
-	* Models includes to face normals data Therefore no smooth shading
+* Load unjosnav's $4.99 [Digestive System Color]( http://www.turbosquid.com/3d-models/digestive-colors-3d-model/880335 ) abdomen model with six organs
+	* Models includes to face normals data ~ therefore no built-in smooth shading
 * Add basic rotation
 * Add basic lights and shows capability
 * Add ground plane, axis and grid
-* Adds gradient backround
+* Adds gradient background
 * Load basic Three.js menu template
 * 2016-12-19
 
@@ -70,7 +70,7 @@
 ### Issues / Problems
 <!--
 
-The general format is an adaptation of the ideas developed in Alexander's _et al_ [A Patttern Language]( https://books.google.com/books?id=hwAHmktpk5IC&pg=PR10#v=onepage&q&f=false ) - as sammarized on page 10.
+The general format is an adaptation of the ideas developed in Alexander's _et al_ [A Pattern Language]( https://books.google.com/books?id=hwAHmktpk5IC&pg=PR10#v=onepage&q&f=false ) - as sammarized on page 10.
 
 Each pattern describes a problem which occurs over and over again in our environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice.
 
@@ -78,7 +78,7 @@ patterns are descriptions of common problems and proposal for the solutions that
 
 -->
 
-_The development of the overall concept is still at an early stage. The following are some prelimary notes/thoughts._
+_The development of the overall concept is still at an early stage. The following are some preliminary notes/thoughts._
 
 There's a zillion images of other people's anatomy, but you want to see the images of *your* anatomy.
 
@@ -159,7 +159,7 @@ Future stage include:
 
 ### CT Scan Files / The Abdomenal FlowMan
 
-I have yet to recive a CD ROM with the DICOM files of my recent scan. Once I have these, I should be able to recreate a 3D viz.
+I have yet to receive a CD ROM with the DICOM files of my recent scan. Once I have these, I should be able to recreate a 3D viz.
 See also the 'Brain of Richard' app. But now augmented with five years of added experience and improved tools
 
 

@@ -23,7 +23,7 @@ The ruminations and code snippets of a patient that relate to [UCSF]( https://uc
 
 _Below are several 3D visualization projects that relate to displaying medical data with free, open source, entry level software code_
 
-_You can use your point device or fingers to zoom, pan aa=nd rotate each project._
+_You may use your pointing device or fingers to zoom, pan and rotate each project._
 
 <br>
 

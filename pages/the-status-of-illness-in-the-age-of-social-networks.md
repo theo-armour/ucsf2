@@ -1,13 +1,26 @@
 
 
 The Status of Illness in the age of Social Networks
+===
 
-Starts with drawing on the thoughts of Walter Benjamin in'The Work of Art in the Age of Mechanical Reproduction'.
+My latest [side hustle]( http://www.urbandictionary.com/define.php?term=side%20hustle ):
+* Dieing
+* Dieing well
+* Dieing 2.0
 
-I am not an academic. But I can track a existing thought process or analysis and see if thee can be similar conclusions drawn elsewhere
+Sharing important matters with people in a non-intrusive, non-overwhelming manner
 
-The story line of Romeo nd Juliette has been recast and reimagined many times.
+Properly researched. Know exactly what you are getting into.
 
+Pain management may be crucial
+
+
+Starts with drawing on the thoughts of [Walter Benjamin]( https://en.wikipedia.org/wiki/Walter_Benjamin ) in
+['The Work of Art in the Age of Mechanical Reproduction']( https://en.wikipedia.org/wiki/The_Work_of_Art_in_the_Age_of_Mechanical_Reproduction ).
+
+I am not an academic. But I can track an existing thought process or analysis and see if there can be similar conclusions drawn elsewhere
+
+The story line of Romeo and Juliette has been recast and re-imagined many times.
 
 How to be ill in the modern era?
 
@@ -15,15 +28,17 @@ How to be ill in the modern era?
 
 
 People will tell you how they are/feel. There's is no need to ask how anybody is, or even to have to remember to ask
--In the old day you migh mark on your calendar that sombody is have a test or procedure so yoou would rember to check in
+-In the old day you might mark on your calendar that somebody is have a test or procedure so you would remember to check in
 
-Prayers, best wishes, hopes for a speedy convelesance, fingers crossed: a dime a dozen
+Prayers, best wishes, hopes for a speedy convalescence, fingers crossed: a dime a dozen
 
 Is the way to getting more 'likes' is to be more ill.
 
-When you are dead you may not be able to like somebody's post, but you can still follow them. Even if thety are dead as well.
+When you are dead you may not be able to like somebody's post, but you can still follow them. Even if they are dead as well.
 
 The more you know, the more people ask you to explain things to them
+
+
 
 
 # Benjamin
@@ -32,22 +47,37 @@ The more you know, the more people ask you to explain things to them
 
 Annual US Health care expenses have passed 3 trillion dollars this year.
 Often creating a crushing burden on people.
-Before going on Medicare my insurance and copyays were in the range of $25,000 year
+Before going on Medicare my insurance and copays were in the range of $25,000 year
 
-Now that I am on Medicare the insurance has f=drpped below $10,000.
+Now that I am on Medicare the insurance has dropped below $10,000.
 
-But the striking thing is that any mention of money and paying for stuff has eveporated.
+But the striking thi0ng is that any mention of money and paying for stuff has evaporated.
 It's as if I had move to Europe = or any normal country where medical costs are borne by the society.
 
 
+## Preface
+
+I need help here. ;-
 
 ## Part I / Ubiquity of procedures
+
+> In principle a work of art has always been reproducible.
+
+Ditto clinical trial
+
+Wikipedia > Clinical study design aims to ensure the scientific validity and reproducibility of the results.
 
 Medical procedures as a product of factories - mechanically reproduced operations
 
 * 'brought into our house from far off'
 
-'the art of the film' is like the 'action at a distance' using endoscopy
+'the art of the film' is like the 'action at a distance' in carrying out an endoscopy
+
+> For the study of this standard nothing is more revealing than the nature of the repercussions that these two different manifestations
+> – the reproduction of works of art and the art of the film – have had on art in its traditional form.
+
+
+In medicine, we reproduce diseases and came make new ones as well
 
 
 
@@ -59,16 +89,18 @@ Benjamin says:
 > its presence in time and space, its unique existence at the place where it happens to be.
 
 
-Similarly the meds, the treatments, the procuders may be the same, but each illness has its own vemu and circumstance
+Similarly the meds, the treatments, the procedurws may be the same, but each illness has its own venue and circumstance
 
 
-We can grow the diseased tissue on a Petri dish, and do stuff we can do wuth the in situ disease
+We can grow the diseased tissue on a Petri dish, and do stuff we can do with the in situ disease
 
 Fun question: What is the 'aura' of an illness - a cancer in particular?
 
-reproduction creates plurality and transmittablity
+reproduction creates plurality and transmission
 
-Illness ditto but less control over transmittability
+Illness ditto but less control over transmission
+
+The vaccine as a reproduction without aura.
 
 
 ## Part III
@@ -88,11 +120,3 @@ Ditto Illness
 * https://en.wikipedia.org/wiki/The_Work_of_Art_in_the_Age_of_Mechanical_Reproduction
 
 
-### Colostomy
-
-* https://en.wikipedia.org/wiki/Colostomy
-
-### Endscopy
-
-* https://medlineplus.gov/ency/article/003918.htm
-* https://en.wikipedia.org/wiki/Endoscopy
