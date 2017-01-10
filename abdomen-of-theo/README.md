@@ -1,68 +1,28 @@
 
 
 <span style=display:none; >[You are now in GitHub source code view - click this link to view Read Me file as a web page]
-( https://theo-armour.github.io/ucsf2/pookeepon-go/index.html#README.md "View file as a web page." ) </span>
-<input type=button onclick=window.location.href='https://github.com/theo-armour/ucsf2/tree/master/pookeepon-go'; value='You are now in GitHub web page view - Click this button to view Read Me file as source code' >
+( https://theo-armour.github.io/ucsf2/abdomen-of-theo/index.html#README.md "View file as a web page." ) </span>
+<input type=button onclick=window.location.href='https://github.com/theo-armour/ucsf2/tree/master/abdomen-of-theo'; value='You are now in GitHub web page view - Click this button to view Read Me file as source code' >
 
 [Theo Armour]( https://theo-armour.github.io ) &raquo; [UCSF2]( https://theo-armour.github.io/ucsf2/ ) &raquo;
 
-[PooKeepOn-Go Read Me]( https://theo-armour.github.io/ucsf2/pookeepon-go/index.html#README.md )
+[Abdomen of Theo Read Me]( https://theo-armour.github.io/ucsf2/abdomen-of-theo/index.html#README.md )
 ===
+
+_as in slice of salmon or leg of chicken_
 
 <iframe src=./latest/index.html width=800 height=500 ></iframe>
 
-### [PooKeepOn-Go R6]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r6.html )
 
-* Load 'sintel.ogv' video and apply as a texture to all six organs
-* Warnings: Plays sound. May not work in mobile device browsers
-* Slight variation of R4
-
-### [PooKeepOn-Go R5]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r5.html )
-
-* Load and apply six different individual images - see below - as textures to each of the six organs
-* Slight variation of R4
-
-![]( https://jaanga.github.io/cookbook/textures/im1.jpg =100x* )
-![]( https://jaanga.github.io/cookbook/textures/im3.jpg =100x* )
-![]( https://jaanga.github.io/cookbook/textures/im5.jpg =100x* )
-![]( https://jaanga.github.io/cookbook/textures/im9.jpg =100x* )
-![]( https://jaanga.github.io/cookbook/textures/im11.jpg =100x* )
-![]( https://jaanga.github.io/cookbook/textures/im15.jpg =100x* )
+### [Abdomen of Theo R2]( https://theo-armour.github.io/ucsf2/abdomen-of-theo/abdomen-of-theo-r2.html )
 
 
-
-### [PooKeepOn-Go R4]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r4.html )
-
-* Load 'water.jpg' image and apply as a texture to all six organs
-* The current 'base' version - r5 and r6 are simple variations on this release
-
-![]( water.jpg =100x* )
-
-### [PooKeepOn-Go R3]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r3.html )
-
-* Add hamburger menu
-* Add toggles for gradient background, visibility and rotation
-* Add 'About' info
-
-
-### [PooKeepOn-Go R2]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r2.html )
-
-* Add merge vertices and calculate facae normals to enable smooth shading
-* Add Direction light rotates around model
-* Add three point lights and adjust intensities
-
-
-### [PooKeepOn-Go R1]( https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r1.html )
-
-* Apply random color with Phong shading to each organ
-* Load unjosnav's $4.99 [Digestive System Color]( http://www.turbosquid.com/3d-models/digestive-colors-3d-model/880335 ) abdomen model with six organs
-	* Models includes to face normals data ~ therefore no built-in smooth shading
 * Add basic rotation
 * Add basic lights and shows capability
 * Add ground plane, axis and grid
 * Adds gradient background
 * Load basic Three.js menu template
-* 2016-12-19
+* 2017-01-09
 
 
 ## Concept
@@ -145,24 +105,14 @@ It just works.
 
 There's a lot more in the works
 
-### PooKeepOn-Go
-
-Future stage include:
-
-* Trace a path inside the organs that can be used as a camera track
-* Devise PooKeepOns, HollyGoLightlies, Polypnesias and other game characters
-* Link to controller
-	* https://www.amazon.com/gp/product/B003ZSN600
-* Acquire higher quaility 3D models
-* Add displacement shaders
-
+<!--
 
 ### CT Scan Files / The Abdomenal FlowMan
 
 I have yet to receive a CD ROM with the DICOM files of my recent scan. Once I have these, I should be able to recreate a 3D viz.
 See also the 'Brain of Richard' app. But now augmented with five years of added experience and improved tools
 
-
+-->
 
 ## Issues / Bugs / Things that need Work
 
@@ -187,13 +137,13 @@ See also the 'Brain of Richard' app. But now augmented with five years of added 
 ## Things you can do by editing the code
 
 <iframe src='https://jaanga.github.io/cookbook-html/examples/libraries/ace-editor/ace-view-r1.html#
-	https://theo-armour.github.io/ucsf2/pookeepon-go/pookeepon-go-r4.html' width=100% height=600 ></iframe>
+	https://theo-armour.github.io/ucsf2/abdomen-of-theo/abdomen-of-theo-r2.html' width=100% height=600 ></iframe>
 
-<input type=button onclick=window.location.href='https://github.com/theo-armour/ucsf2/blob/master/pookeepon-go/pookeepon-go-r4.html';
+<input type=button onclick=window.location.href='https://github.com/theo-armour/ucsf2/blob/master/abdomen-of-theo/abdomen-of-theo-r2.html';
 value='Source code listing' >
 
 
-* Open this file: https://github.com/theo-armour/ucsf2/blob/master/pookeepon-go/pookeepon-go-r4.html
+* Open this file: https://github.com/theo-armour/ucsf2/blob/master/abdomen-of-theo/abdomen-of-theo-r2.html
 * Click the 'Raw' icon and save the raw file to your computer
 * Once you've downloaded the file, you can click it to run it.
 * Open the file with a text editor
@@ -219,11 +169,7 @@ GitHub
 
 ## Change Log
 
-### 2017-01-03
-
-* Update read me
-
-### 2017-01-01
+### 2017-01-09
 
 * First commit
 * Update read me

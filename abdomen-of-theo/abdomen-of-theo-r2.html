@@ -2,7 +2,7 @@
 <html lang=en >
 <head>
 <meta charset=utf-8 >
-<title>Abdomen of Theo R1</title>
+<title>Abdomen of Theo R2</title>
 <meta name=viewport content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' >
 <meta name=description content='What\'s Inside?' >
 <meta name=keywords content='Theo Armour,WebGL,Three.js,JavaScript,GitHub,FOSS,3D,STEM' >
@@ -20,20 +20,27 @@
 <script>
 // Copyright 2017 Theo Armour ~ MIT license
 
+//file:///C:/Users/Theo/Dropbox/Public/git-repos/theo-armour.github.io/ucsf2/abdomen-of-theo/6081/6088/6081612.png
+
+// file:///C:/Users/Theo/Dropbox/Public/git-repos/theo-armour.github.io/ucsf2/abdomen-of-theo/6081/6089/6081129.png
+// file:///C:/Users/Theo/Dropbox/Public/git-repos/theo-armour.github.io/ucsf2/abdomen-of-theo/6081/6089/6081329.png
+
+	var path = 'file:///C:/Users/Theo/Dropbox/Public/git-repos/theo-armour.github.io/ucsf2/abdomen-of-theo/';
 	var abdomen;
 
 	var scans = {
 
 		scans6082 : {
-			dir: './6081/6082/608',
+			dir: '6081/6082/608',
 			count: 2,
-			opacity: 0.02,
+			delta: -50,
+			opacity: 0.6,
 			angle: 1.5708,
-			start: 12,
+			start: 10,
 		},
 
 		scans6083 : {
-			dir: './6081/6083/608',
+			dir: '6081/6083/608',
 			count: 419,
 			delta: -0.3,
 			opacity: 0.02,
@@ -41,42 +48,61 @@
 
 		},
 
-
 		scans6084 : {
-			dir: './6081/6084/608',
-			count: 215,
-			opacity: 0.02,
+			dir: '6081/6084/608',
+			count: 1,
+			delta: -0.3,
+			opacity: 0.6,
 			angle: 1.5708,
-			start: 441,
+			start: 656,
 
 		},
 
 		scans6085 : {
-			dir: '../6081/6085/608',
+			dir: '6081/6085/608',
 			count: 215,
+			delta: -0.6,
 			opacity: 0.02,
 			angle: 1.5708,
 			start: 441,
-
 		},
 
 		scans6086 : {
-			dir: '../6081/6086/608',
+			dir: '6081/6086/608',
 			count: 108,
+			delta: -0.9,
 			opacity: 0.03,
 			angle: 1.5708,
-			start: 657,
-
+			start: 657
 		},
 
 		scans6087 : {
-			dir: '../6081/6087/608',
-			count: 108,
+			dir: '6081/6087/608',
+			count: 429,
+			delta: -0.3,
 			opacity: 0.03,
 			angle: 1.5708,
-			start: 657,
+			start: 765
+		},
 
+		scans6088 : {
+			dir: '6081/6088/608',
+			count: 135,
+			delta: -0.9,
+			opacity: 0.03,
+			angle: 1.5708,
+			start: 1194
+		},
+
+		scans6089 : {
+			dir: '6081/6089/608',
+			count: 86,
+			delta: -0.9,
+			opacity: 0.06,
+			angle: 1.5708,
+			start: 1329
 		}
+
 
 	}
 
@@ -126,7 +152,10 @@
 				'<details open>' +
 					'<summary><h3>Menu</h3></summary>' +
 
-//					'<p><button onclick=getIt(); >get it</button></p>' +
+					'<p>' +
+						'<select id=selScan onchange="loadTexture( scans[ this.value ] );" size=10 style=width:100%; ></select>' +
+					'</p>' +
+
 
 					'Description:' + b +
 					document.head.querySelector("[name=description]").content + b + b +
@@ -139,6 +168,7 @@
 					'<p id=menuInfo >' +
 						'This is a template or boilerplate file that is frequently used to start-off a Jaanga projects. ' +
 					'</p>' +
+
 				'</details>' +
 
 				'<details>' +
@@ -177,6 +207,17 @@
 
 		'';
 
+
+		names = Object.getOwnPropertyNames( scans );
+
+		for ( var i = 0; i < names.length; i++ ) {
+
+			selScan[ i ] = new Option( names[ i ] );
+
+		}
+
+		selScan.selectedIndex = 3;
+
 		stats = new Stats();
 		stats.domElement.style.cssText = 'position: absolute; right: 0; top: 0;' ;
 		document.body.appendChild( stats.domElement );
@@ -211,8 +252,6 @@
 		scene.add( ground );
 */
 
-
-
 		axisHelper = new THREE.AxisHelper( 50 );
 		scene.add( axisHelper );
 
@@ -245,7 +284,7 @@
 
 			loader.load(
 
-				obj.dir + ( obj.start + i ) + '.png',
+				path + obj.dir + ( obj.start + i ) + '.png',
 
 				function ( texture ) {
 
