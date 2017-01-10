@@ -9,14 +9,14 @@
 <meta name=date content='2017-01-08' >
 </head>
 <body>
+<!--
 <script src=https://mrdoob.github.io/three.js/build/three.min.js ></script>
 <script src=https://mrdoob.github.io/three.js/examples/js/controls/OrbitControls.js ></script>
 <script src=https://mrdoob.github.io/three.js/examples/js/libs/stats.min.js ></script>
-<!--
+-->
 <script src=https://rawgit.com/mrdoob/three.js/dev/build/three.min.js ></script>
 <script src=https://rawgit.com/mrdoob/three.js/dev/examples/js/controls/OrbitControls.js ></script>
 <script src=https://rawgit.com/mrdoob/three.js/dev/examples/js/libs/stats.min.js ></script>
--->
 <script>
 // Copyright 2017 Theo Armour ~ MIT license
 
@@ -25,7 +25,9 @@
 // file:///C:/Users/Theo/Dropbox/Public/git-repos/theo-armour.github.io/ucsf2/abdomen-of-theo/6081/6089/6081129.png
 // file:///C:/Users/Theo/Dropbox/Public/git-repos/theo-armour.github.io/ucsf2/abdomen-of-theo/6081/6089/6081329.png
 
-	var path = 'file:///C:/Users/Theo/Dropbox/Public/git-repos/theo-armour.github.io/ucsf2/abdomen-of-theo/';
+//	var path = 'file:///C:/Users/Theo/Dropbox/Public/git-repos/theo-armour.github.io/ucsf2/abdomen-of-theo/';
+	var path = '';
+
 	var abdomen;
 
 	var scans = {
@@ -207,7 +209,6 @@
 
 		'';
 
-
 		names = Object.getOwnPropertyNames( scans );
 
 		for ( var i = 0; i < names.length; i++ ) {
@@ -216,7 +217,7 @@
 
 		}
 
-		selScan.selectedIndex = 3;
+		selScan.selectedIndex = 4;
 
 		stats = new Stats();
 		stats.domElement.style.cssText = 'position: absolute; right: 0; top: 0;' ;
@@ -260,7 +261,7 @@
 		toggleBackgroundGradient();
 
 
-//		loadTexture( scans6083 );
+		loadTexture( scans.scans6086 );
 
 	}
 
@@ -281,6 +282,8 @@
 		geometry.applyMatrix( new THREE.Matrix4().makeRotationX( -0.5 * Math.PI ) );
 
 		for ( var i = 0; i < obj.count; i++ ) {
+
+// http://stackoverflow.com/questions/35015251/how-do-i-load-multiple-textures-with-the-new-three-textureloader
 
 			loader.load(
 
