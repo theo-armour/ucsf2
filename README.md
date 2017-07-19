@@ -1,6 +1,6 @@
 
-<span style="display: none"> [View as web page]( http://exploratoria.github.io/ 'View file as a web page' ) </span>
-<input type=button value="View file as source code on GitHub" onclick="window.location.href='https://github.com/exploratoria/exploratoria.github.io/'" />
+<span style="display: none"> [View as web page]( http://theo-armour.github.io/ucsf2/ 'View file as a web page' ) </span>
+<input type=button value="View file as source code on GitHub" onclick="window.location.href='https://github.com/theo-armour/ucsf2'" />
 
 [Theo Armour]( https://theo-armour.github.io ) &raquo;
 
