@@ -42,7 +42,7 @@ _You may use your pointing device or fingers to zoom, pan and rotate each projec
 
 ## August 2015 [Femur Heart UCSF]( ./femur-heart-ucsf/index.html ) &laquo; full screen
 
-<iframe src=./femur-heart-ucsf/index.html width=800 height=500 ></iframe>
+<iframe src="./femur-heart-ucsf/index.html" width="800" height="500" ></iframe>
 
 * I started coding this piece the day of my hip replacement surgery - just to show I could still code*
 * The background is the UCSF 505 Parnassus campus captured from Google Street View
@@ -55,7 +55,7 @@ _You may use your pointing device or fingers to zoom, pan and rotate each projec
 
 ## 2012 [Brain of Richard]( http://jaanga.github.io/brainofrichard/ ) &laquo; full screen
 
-<iframe src=https://jaanga.github.io/brainofrichard/ width=800 height=500 ></iframe>
+<iframe src="https://jaanga.github.io/brainofrichard/" width=800 height=500 ></iframe>
 
 * My first 3D medical intervention
 * Started in 2012 after my friend Richard was diadgosed with a brain tumor
