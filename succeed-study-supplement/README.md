@@ -7,10 +7,11 @@
 
 [Succeed Study Supplement Read Me]( https://pushme-pullyou.github.io/#tootoo/r5/succeed-study-supplement/README.md )
 ===
-_Not connected with UCSF. Just looking for good-tasting, filling, nutritious food&mdash;and staying out of harm's way_
+_Not connected with UCSF. Just looking for good-tasting, filling, nutritious food&mdash;and staying out of ~~ham's~~ harm's way._
 
 My name is Theo Armour. I am the writer of these pages and a participant in the study described below.
 
+I have added and edited on several occasions during the study. I expect I shall continue to do the same after the study.
 
 ## Survivor Choices for Eating and Drinking - Colorectal Cancer (SUCCEED)
 

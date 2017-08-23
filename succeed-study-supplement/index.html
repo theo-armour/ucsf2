@@ -66,20 +66,6 @@ blockquote, pre { background-color: #eee; padding: 10px; }
 }
 
 
-/* specials for this project */
-
-.breakout { background-repeat:no-repeat; background-size:100% 100%; text-align:center; margin-left:-100%; margin-right:-100%; }
-
-/*
-
-// Put in Markdown file if desired
-
-	<div class="breakout" style=background-image:url("https://lorempixel.com/1000/500");height:500px; >breakout image</div>
-*/
-
-.button { background-color: #bbb; border: 1px solid #eee; color: #fff; display: inline-block; padding: 8px; vertical-align: middle; }
-
-
 </style>
 
 </head>
@@ -252,7 +238,7 @@ blockquote, pre { background-color: #eee; padding: 10px; }
 
 		let file = location.hash.slice( 1 ) ? location.hash.slice( 1 ) : 'README.md';
 
- 		window.open( 'https://github.com/' + userGitHub + '/' + userGitHub + '.github.io/blob/master/' + folderGitHub + file );
+ 		window.open( 'https://github.com/' + userGitHub + '/' + folderGitHub + file );
 
 	}
 

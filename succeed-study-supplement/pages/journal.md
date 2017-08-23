@@ -1,8 +1,29 @@
 
+### 2017-08-23
+
+The text messages are lightweight. On one hand they seem to talk to people that have a lot of time on their hands, like to go shopping, take pleasure in preparing complex meals. On the other hand the messages seem to talk to people who have not put a lot of thought into what they actually eat.
+
+
+Where are the links to cool papers by learned food peeps? Or web sites that provide useful diet stats and facts. Where are pointers to commercial products that are actually OK to eat? 
+
+
+It might be better if the messages were better targeted to various audience type: living with others or living alone. Have time to cook or don't have time. Meat & potatoes or vegan & vegan. And so on. And there should be a way of seeing all the messages that have been sent.
+ 
+***
+
+Filling out my track succeed spreadsheet is not working out really well. It's too boring to want to do,
+
+Yes, I could add subtotals which might make things look more interesting. but I live on numbers. I 'see' the whole sheet and subtotals distract in many ways. Ditto coloring the numbers if I hit a target << I should do this anyway. Done
+
+I should build an app and have a $40 Amazon tablet in the kitchen just for adding what I eat.
 
 
 ### 2017-07-31 ~ 
 
+
+Are nitrites getting a bad rap
+
+Several processed meat vendors sell products with no nitrites. Photo of th back of a Columbus Pepper Turkey package:  [columbus-pepper-turkey.jpg]( columbus-pepper-turkey.jpg ).
 
 Sodium Nitrite
 https://en.wikipedia.org/wiki/Sodium_nitrite

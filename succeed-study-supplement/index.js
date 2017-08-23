@@ -5,5 +5,5 @@
 
 	defaults.user = 'theo-armour';
 
-	defaults.folder = 'ucsf2/succeed-study-supplement/';
+	defaults.folder = 'ucsf2/blob/master/succeed-study-supplement/';
 

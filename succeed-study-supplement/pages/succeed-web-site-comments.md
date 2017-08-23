@@ -7,7 +7,7 @@ https://succeed.ucsf.edu
 
 Would be better with the following
 
-* Copyright notice - no longer required, but recommnded
+* Copyright notice - no longer required, but recommended
 * License - obligatory
 * Source code would be better with the description meta tag actually filled in
 * Profile and Logout links might better placed at top of page
@@ -19,7 +19,7 @@ Would be better with the following
 
 ## Our Team
 
-* Links to team member's UCSF profle pages would be nice: example http://profiles.ucsf.edu/erin.richman
+* Links to team member's UCSF profile pages would be nice: example http://profiles.ucsf.edu/erin.richman
 * Providing names and contact information for all public facing team members would be nice
 	* Helps people verify that phone call is from actual team member and not a scam
 * Would be nice to mention the grant and the grantor
@@ -30,13 +30,15 @@ Would be better with the following
 
 I can understand eating whole grains in preference to eating white bread and other starches.
 
-But I do not understand the push for eating whole grains if you are getting your carbs through vegetables, nuts with a portion or two of rice per day
+But I do not understand the push for eating whole grains if you are getting your carbs through vegetables, nuts with a portion or two of rice per day,
 
 
 
 ## Track
 
-You should not have to press the save button. Whatever you click should be the value. It should not take 24 clicks to fill in one day of date - plus six more clicks to double check all the values
+You should not have to press the save button. Whatever you click should be the value. It should not take 24 clicks to fill in one day of date - plus six more clicks to double check all the values.
+
+I made my own online spreadsheet - much faster entry and results much more easily visible
 
 
 ## Eat Well
@@ -74,7 +76,7 @@ BTW, I clicked the 'submit' button but had not filled anything in. Nonetheless I
 
 > Plan your meals, snacks, and beverages for the week.
 
-Nice idea, but a lot of the products I buy have short expiry dates and supermarkets are not always the best at keeping fresh products on the shelf. All the salads and fresh veggies are pre-washed. The choice of what I buy very much depends on the expiray date of the product which I can only tell on the day when I am actually in the market
+Nice idea, but a lot of the products I buy have short expiry dates and supermarkets are not always the best at keeping fresh products on the shelf. All the salads and fresh veggies are pre-washed. The choice of what I buy very much depends on the expiray date of the product which I can only tell on the day when I am actually in the market.
 
 
 ### Example meals
@@ -100,10 +102,11 @@ Measures in metric system?
 
 1. What counts as 1 serving for vegetables, whole grains, alcohol, processed meat, fish, or sweetened beverages?
 
-Nuts?
-Almond milk?
-Lentis
-Veggie Chile
+What about:
+* Nuts?
+* Almond milk?
+* Lentils
+* Veggie Chile
 
 
 4. Should I be concerned about added sugars?
@@ -115,14 +118,8 @@ Veggie Chile
 
 > Research in animals suggests probiotics and prebiotics may be beneficial for preventing colorectal cancer, but more research in humans is needed. Until more is known, probiotic/prebiotic dietary supplements should be avoided. Obtain probiotics and prebiotics through a diet rich in fruits, vegetables, whole grains, nonfat plain yogurt, nuts, and legumes.
 
-But the
+But the [Nutrition for Colorectal Cancer Survivors]( ColorectalCancerGuidelines_2016_gm.pdf ) says:
 
 > Probiotics can also be taken in the form of a dietary supplement.
 
-Although there is currently no recommended amount, most experts suggest
-
-using a refrigerated probiotic supplement providing a minimum of 2 billion colony
-
-forming units (CFUs) per day, with a blend of Lactobacillus and Bifidobacteria
-
-probiotics.
+> Although there is currently no recommended amount, most experts suggest using a refrigerated probiotic supplement providing a minimum of 2 billion colony forming units (CFUs) per day, with a blend of Lactobacillus and Bifidobacteria probiotics.
