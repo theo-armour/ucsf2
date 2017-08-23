@@ -135,6 +135,17 @@ Intended for xxx
 ### More
 
 * http://www.health.harvard.edu/blog/weight-loss-that-works-a-true-story-2017030111218
+* https://health.gov/dietaryguidelines/2015/guidelines/
+* https://www.choosemyplate.gov/
+* https://ods.od.nih.gov/
+
+
+
+### Vitamins
+
+* https://en.wikipedia.org/wiki/Vitamin
+* https://www.theatlantic.com/health/archive/2013/07/the-vitamin-myth-why-we-think-we-need-supplements/277947/
+
 
 ## To Do / Goals / Up Next
 

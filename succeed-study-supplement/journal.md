@@ -1,5 +1,17 @@
 
 
+
+### 2017-07-31 ~ 
+
+
+Sodium Nitrite
+https://en.wikipedia.org/wiki/Sodium_nitrite
+https://en.wikipedia.org/wiki/Nitrosamine
+https://pubchem.ncbi.nlm.nih.gov/compound/sodium_nitrite#section=Information-Sources
+http://www.meatsafety.org/ht/d/sp/i/45243/pid/45243
+http://www.prevention.com/food/healthy-eating-tips/nitrites-and-nitrates
+
+
 ### 2017-06-26
 
 * http://www.myfitnesspal.com/food/calorie-chart-nutrition-facts

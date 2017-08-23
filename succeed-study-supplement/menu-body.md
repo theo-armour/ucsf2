@@ -1,14 +1,25 @@
+<style>
 
-## [Unofficial Succeed Study Supplement]( index.html )
+#menu p { margin: 0 }
+
+</style>
 
 
-#### [README/ home page]( #README.md )
+[Theo Armour]( https://theo-armour.github.io )
+
+
+## [Succeed Study Supplement]( index.html )
+
 
 ***
 
 ### [Shopping Goals]( #shopping-goals.md )
 
+### [Eating Goals]( #eating-goals.md )
+
 ### [Condiments]( #condiments.md )
+
+### [Succeed Web Site Comments]( #succeed-web-site-comments.md )
 
 ### [Journal]( #journal.md )
 
