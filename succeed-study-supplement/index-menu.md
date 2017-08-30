@@ -17,7 +17,13 @@
 
 ### [Eating Goals]( #pages/eating-goals.md )
 
+***
+
+### [Breakfast]( #pages/breakfast.md )
+
 ### [Condiments]( #pages/condiments.md )
+
+***
 
 ### [Succeed Web Site Comments]( #pages/succeed-web-site-comments.md )
 

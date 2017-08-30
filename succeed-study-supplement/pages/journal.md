@@ -1,3 +1,25 @@
+# Journal
+
+
+
+### 2017-08-29
+
+* Move all links to their own separate page
+* Every link to have a date
+* Find a good method for organizing food links
+
+Sheet of paper to document intake has been OK. No lag time to load up app
+
+Adding to breakfast page
+
+
+
+### 2017-08-26
+
+I put sheet of paper and pencil in the kitchen on Wednesday. I have been keeping track of what I eat. And it's moderately fun to see how best to code the items and lay out the page in an effective, intuitize, fast way.
+ 
+
+
 
 ### 2017-08-23
 

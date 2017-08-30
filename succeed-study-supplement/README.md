@@ -47,7 +47,7 @@ I am an elderly, disabled white male residing in San Francisco. I am not alone. 
 
 The ingredient acquisition, food preparation, consumption and cleanup patterns that works so well for the traditional nuclear family does no apply to us
 
-Here are some anecdotal observations*
+Here are some anecdotal observations:
 
 Most cookbooks help you plan meals for two, four or more people
 
@@ -55,11 +55,13 @@ If you are fully employed, living by yourself and have an active life, then spen
 
 Many recipes anticipate that you spend ten minutes or more preparing a dish. This time along with the time for washing up and shopping can easily mount up to twenty to thirty minutes per meal. Doing that two or three times a day can severely limit other activities you may be interested in
 
-You would like to eat in a healthy manner and therefore you need to know the nutritional content of food. Very few restaurants provide any nutritional data let alone complete data. And just because the sign says there 500 mg of salt does not stop the chef from putting 1000 mg ib the dishes that happened to arrive at your table.
-
-Eating at home is the only real way of keeping track of what you are eating. And this sure can be lonely and boring.
-
 Any time you grill, boil, broil or bake and any time you spend chopping, dicing or shredding you are increasing prep time and wash-up time.
+
+You would like to eat in a healthy manner and therefore you need to know the nutritional content of food. Very few restaurants provide any nutritional data let alone complete data. And just because the sign says there 500 mg of salt does not stop the chef from putting 1000 mg in the dish that happened to arrive at your table.
+
+Therefore eating at home is the only real way of keeping track of what you are eating. 
+
+And eating at home sure can be lonely and boring.
 
 Feeling hungry is no fun. Finding food that fills you up can be difficult. For example, in the frozen foods sections there my be hundreds of prepared meals available. The great majority have serving sized between six to nine ounces. This portion size may be adequate if you weigh 90 pounds but will leave you feeling famished if you weigh twice that amount. Using two packages almost always mean you will go over the op in terms of salt, fat, sugars and more
 
@@ -68,6 +70,10 @@ If the peeps of my cohort are to eat food that helps with post-cancer survival t
 
 ### Mission
 <!-- a statement of a rationale, applicable now as well as in the future -->
+
+Given: my cohortof living along, quit busy and yet desirous of a healthy, pleasurable menu of tasty things to eat
+
+Wanted:
 
 * We mostly acquire food ingredients from supermarkets
 	* Identify specific products from supermarkets that are OK to eat.
@@ -78,7 +84,7 @@ If the peeps of my cohort are to eat food that helps with post-cancer survival t
 	* Microwaves, electric kettles and toasters are your friends
 	* Ovens, baking dishes, sauce pans not so much
 * Cleanup must be minimal
-	* Come with cooking methods so that dishes that may prepared in the dishes they will be eaten in.
+	* Come up with cooking methods so that dishes that may prepared in the dishes they will be eaten in.
 	* After you clean the grease off a pan a few times, you may begin not to cook things that create that sort of grease
 * Getting the data is an ongoing process
 	* Identify safe eating limits - both minimums and maximums
@@ -92,7 +98,8 @@ If the peeps of my cohort are to eat food that helps with post-cancer survival t
 <!--  a descriptive picture of a desired future state -->
 
 * Eating is fun, healthy and easy
-
+* You are eating at or below your daily recommended calorie intake yet you rarely feel hungry
+* Preparation and cleanup typically take less time than th time it takes to eat what is prepared 
 
 
 <!--
@@ -133,6 +140,10 @@ Intended for xxx
 * http://health.usnews.com/health-care/articles/2017-05-17/nuts-good-medicine-for-colon-cancer-survivors
 
 
+### Carbs & Fats
+
+* 2017-08-29 ~ https://www.cbsnews.com/news/large-study-suggests-carbs-not-fats-bad-for-you/
+
 ### More
 
 * http://www.health.harvard.edu/blog/weight-loss-that-works-a-true-story-2017030111218
@@ -155,6 +166,11 @@ Intended for xxx
 
 
 ## Change Log
+
+
+### 2017-08-29
+
+* Updates throughout
 
 ### 2017-06-25
 
