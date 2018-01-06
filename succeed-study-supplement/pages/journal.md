@@ -2,6 +2,16 @@
 
 
 
+### 2017-09-03 ~ 
+
+Macadamia Nuts
+
+* https://en.wikipedia.org/wiki/Macadamia
+* http://www.webmd.com/cholesterol-management/news/20000424/macadamia-nut-cholesterol#1
+* http://foodfacts.mercola.com/macadamia.html
+* http://www.stylecraze.com/articles/amazing-health-benefits-of-macadamia-nuts/#gref
+
+
 ### 2017-08-29
 
 * Move all links to their own separate page
