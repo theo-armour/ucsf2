@@ -1,69 +1,216 @@
-﻿<!doctype html>
-<html lang=en >
+<!doctype html>
+<html lang = "en" >
 <head>
-<meta charset=utf-8 >
-<title>Open Index or Markdown</title>
-<meta name=viewport content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' >
-<meta name=description content='File wrangler. Default index.html file. Opens HTML or Markdown files. Passes location.hash.' >
-<meta name=keywords content='ShowDown,Markdown,AJAX,JavaScript,HTML,CSS,GitHub,FOSS' >
-<meta name=date content='2016-10-16' >
+<meta charset = "utf-8" >
+<meta name = "viewport" content= "width=device-width, initial-scale=1" >
+<meta name = "description" content = "This menu is a component of a basic html content management script with sliding menu, css theme selection, Markdown to HTML, drag and drop file reading capability, access to frequently used pages and more" >
+<meta name = "keywords" content = "JavaScript,GitHub,FOSS" >
+<meta name = "date" content = "2019-02-20" >
+<meta name = "release" content = "13.1.2" >
+<title>Theo Armour / UCSF2 topics </title>
+<link rel="stylesheet" href="https://pushme-pullyou.github.io/tootoo13/js-tootoo13-1/style.css">
 </head>
 <body>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/showdown/1.5.5/showdown.min.js ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js" ></script>
+
+<script src="https://pushme-pullyou.github.io/tootoo13/js-tootoo13-1/fob-file-open-basic.js" ></script>
+<script src="https://pushme-pullyou.github.io/tootoo13/js-tootoo13-1/mnu-menu.js" ></script>
+<script src="https://pushme-pullyou.github.io/tootoo13/js-tootoo13-1/ohc-on-hash-change.js" ></script>
+<script src="https://pushme-pullyou.github.io/tootoo13/js-tootoo13-1/sfm-selected-files-markdown.js" ></script>
+<script src="https://pushme-pullyou.github.io/tootoo13/js-tootoo13-1/thm-theme-select.js" ></script>
+<script src="https://pushme-pullyou.github.io/tootoo13/js-tootoo13-1/tmp-template.js" ></script>
 <script>
-// https://github.com/showdownjs/showdown
-// https://github.com/jaanga/jaanga.github.io/tree/master/cookbook-html/templates2/open-index-or-markdown
 
-	var defaultFile = 'index.html';
-	location.hash = 'README.md';
+//Copyright 2019 pushMe-pullYou authors. MIT License
 
-	var contents;
+MNU.description =
+	`
+		TooToo is a collection of basic plain-vanilla JavaScript scripts for content management on GitHub pages with sliding menu, CSS theme selection, Markdown to HTML, drag and drop file reading capability, access to frequently used pages and more
+	`;
 
-	init();
+MNU.currentStatusCore =
+	`
+		<h3>
+			template
+			R${ document.head.querySelector( '[ name=release ]' ).content }
+			~
+			${ document.head.querySelector( '[ name=date ]' ).content }
+		</h3>
 
-	function init() {
+		<p>${ MNU.description }</p>
 
-		if ( location.hash.match( '.md' ) ) {
+		<details>
 
-			onHashChange();
+			<summary>Change log</summary>
 
-		} else {
+			<ul>
+				<li>2019-02-20 ~ R13.1.1 ~ minor updates </li>
+				<li>2019-02-12 ~ R13.1.1 ~ fix style issues. Update status text. Add localStorage them var. Add closer to rate limits popup.</li>
+				<li>2019-02-07 ~ R13.1.0 ~ refactor styles</li>
+				<li>2019-01-13 ~ edits in most most modules</li>
+				<li>2019-01-13 ~ Read me files have more content</li>
+				<li>2019-01-11 ~ Fork to new repo</li>
+				<li>2019-01-09 ~ R13 beginning to look OK.</li>
+				<!--
+					<li></li>
+				-->
+			</ul>
 
-			window.location.href = defaultFile + location.hash;
+		</details>
 
-		}
+		<details>
 
-	}
+			<summary>TooToo Content Manager</summary>
 
-	function onHashChange() {
+			<p>This web page is built with:</p>
 
-		var css, converter, url, xhr;
+			${ MNU.descriptionTooToo }
 
-		css = document.head.appendChild( document.createElement( 'style' ) );
-		css.innerHTML =
+		</details>
+	`;
 
-			'body { font: 12pt monospace; left: 0; margin: 0 auto; max-width: 800px; right: 0; }' +
-			'a { color: crimson; text-decoration: none; }' +
-			'button, input[type=button] { background-color: #eee; border: 2px #eee solid; color: #888; }' +
 
-		'';
 
-		contents = contents ? contents : document.body.appendChild( document.createElement( 'div' ) ) ;
 
-		converter = new showdown.Converter( { strikethrough: true, literalMidWordUnderscores: true, simplifiedAutoLink: true, tables: true });
+const uriDefaultFile = 'README.md';
 
-		url = location.hash.slice( 1 );
+THM.themeUrlStorage = 'theo-armour-ucsf2-ThemeUrl';
+THM.cssBasic = "https://pushme-pullyou.github.io/tootoo13/js-tootoo13-1/style.css";
 
-		xhr = new XMLHttpRequest();
-		xhr.open( 'get', url, true );
-		xhr.onload = function() { contents.innerHTML = converter.makeHtml( xhr.responseText ); };
-		xhr.send( null );
+// For main menu header
+MNU.urlSourceCode = "https://github.com/pushme-pullyou/pushme-pullyou.github.io/tree/master/tootoo-templates/hamburger-css";
 
-		document.title = url.split( '/' ).pop();
+MNU.homeText  = "theo armour";
+MNU.homeTitle = ""; "Very simple JavaScript files to help you explore and build new tools on GitHub.";
+MNU.homeUrl   = "https://theo-armour.github.io";
 
-		window.addEventListener( 'hashchange', onHashChange, false );
+MNU.repoText = "UCSF2";
+MNU.repoTitle = ""; //"Basic html templates with sliding menu, css selection, markdown capability and frequently used pages";
+MNU.repoUrl = "https://theo-armour.github.io/ucsf2";
 
-	}
+MNU.appText  = ""; // "CMS";
+MNU.appTitle = ""; //"Basic html content management script with sliding menu, css theme selection, Markdown to HTML, drag and drop file reading capability, access to frequently used pages and more";
+MNU.appUrl   = ""; //"https://pushme-pullyou.github.io/#tootoo-templates/hamburger-theme-cms/README.md";
+
+MNU.urlSourceCodeImage="https://status.github.com/images/invertocat.png";
+MNU.urlSourceCodeIcon=`<img src="${ MNU.urlSourceCodeImage }" height=18 >`;
+
+MNU.footerUrl    = "#../../";
+MNU.footerTarget = ""; //"target=_blank";
+MNU.footerIssues = "https://github.com/theo-armour/ucsf2/issues";
+
+// for parsing
+OHC.user = 'theo-armour';
+OHC.repo = 'ucsf2';
+OHC.pathRepo = '';
+OHC.branch = '/master/';
+
+// When running in dev folder
+// = location.href.includes( OHC.repo ) ? '../' : 'https://' + OHC.repo + "/";
+//OHC.urlGitHubPage = `https://${ OHC.repo }/`;
+// When running in build repo
+OHC.urlGitHubPage = "";
+
+</script>
+
+
+	<nav id="navMenu" >
+
+		<header>
+
+			<div id="MNUdivHeader" ></div>
+
+		</header>
+
+		<details class=navSubMenu open >
+
+			<summary class=sumMenuTitle >File Menu</summary>
+
+			<section id=SFMsecPrototypes ></section>
+
+			<section id="OHCsecMenuRepoFilesFolders" ></section>
+
+			<section id=FOBsecFileOpenBasic ></section>
+
+			<section id=FILdivFileSave ></section>
+
+		</details>
+
+
+		<details class=navSubMenu open >
+
+			<summary class=sumMenuTitle >Settings</summary>
+
+			<section id=THMsecMenuThemeSelect ></section>
+
+			<section id=TMPsecMenuTemplate ></section>
+
+		</details>
+
+
+		<footer class=navSubMenu >
+
+			<section id="MNUdivFooter" ></section>
+
+		</footer>
+
+
+		<h1 onclick=navMenu.scrollTop=0; style=cursor:pointer;text-align:center; title="go to top of menu" > ❦ </h1>
+
+	</nav>
+
+
+	<div>
+
+		<button id="butHamburger" onclick=MNU.toggleNavLeft(); title="click here to hide this menu"> slide &#9776; </button>
+
+	</div>
+
+
+	<nav id="navPopUp" >
+
+		<div id="divPopUpData" ></div>
+
+		<div id="divMessage" ></div>
+
+	</nav>
+
+
+	<div id="divContainer" >
+
+		<div id="divContents" ></div>
+
+	</div>
+
+<script>
+
+
+
+init();
+
+
+function init() {
+
+	MNUdivHeader.innerHTML = MNU.getNavHeader();
+
+	//SFM.getMarkdownFileContents("prototypes.md",SFMsecPrototypes);
+
+	OHCsecMenuRepoFilesFolders.innerHTML = OHC.getMenuRepoFilesFolders();
+
+	FOBsecFileOpenBasic.innerHTML = FOB.getMenuFileOpenBasic( divContents, divPopUpData );
+
+	THMsecMenuThemeSelect.innerHTML = THM.getMenuThemeSelect();
+
+	TMPsecMenuTemplate.innerHTML = TMP.getMenuTemplate();
+
+	MNUdivFooter.innerHTML = MNU.getNavFooter(); // not essential
+
+	THM.init();
+
+	OHC.onHashChange();
+
+}
+
 
 </script>
 </body>
