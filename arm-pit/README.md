@@ -19,13 +19,49 @@ _<small>ZZZZZ</small>_
 ## Concept
 
 
-## To Do / Wish List
+## To Do / Wish List / Action items
+
+* 2019-02-23 ~ Dr Pitsch: provide list of habit changing help titles
+* 2019-02-23 ~ Theo: build app to export Google Fit data
+
+<details open>
+
+<summary>Diary </summary>
+
+### 2019-02-23
+
+This week
+* over 6,000 steps per day
+* Over 60 minutes waking per day
+* Over 10 heart points per day
+* 10 hip-ups a day when I get up. Sometimes more later
+* 10 Pushups a few times - on floor and against counter
+* Can get up and out of a chair that is fairly high without using hand or elbow
 
 
-## Issues
+### 2019-02-21 ~ Theo
+
+* First commit
+
+</details>
 
 
-## Things you can do
+
+<details open >
+
+<summary>Links of Interest</summary>
+
+* [My New Side Hustle: Death 2.0]( https://medium.com/@ta/my-new-side-hustle-death-2-0-490449d12e2d )
+	Text by Theo
+* https://www.rockmyrun.com/
+	* Lose weight, perform better, and have more fun tracking your workouts with <br/> intelligent music that motivates.
+
+
+</details>
+
+<details>
+
+<summary>Things you can do</summary>
 
 Using the Script
 
@@ -40,17 +76,8 @@ Enhancing the Script
 * Try adding a new menu module
 * Translate into another language
 
-## Links of Interest
+</details>
 
-By Theo
-
-* [My New Side Hustle: Death 2.0]( https://medium.com/@ta/my-new-side-hustle-death-2-0-490449d12e2d )
-
-## Change Log
-
-### 2019-02-21 ~ Theo
-
-* First commit
 
 
 ***
