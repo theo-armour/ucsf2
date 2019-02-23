@@ -55,6 +55,9 @@ This week
 	Text by Theo
 * https://www.rockmyrun.com/
 	* Lose weight, perform better, and have more fun tracking your workouts with <br/> intelligent music that motivates.
+Google Fit
+* https://fit.google.com/u/0/
+* https://play.google.com/store/apps/details?id=com.google.android.apps.fitness
 
 
 </details>

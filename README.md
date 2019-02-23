@@ -13,7 +13,7 @@ The ruminations and code snippets of a patient that relate to [UCSF]( https://uc
 
 ## See also [Theo Armour >> UCSF2 >> Issues]( https://github.com/theo-armour/ucsf2/issues )
 * A variety of posts relating to my various experiences of UCSF
-* All posts are complimentary of actual care-givers but may be less complimentary about the more bureaucratic aspects of operating a large hospital system
+* All posts are complimentary of actual care-givers but may be less complimentary about the more bureaucratic aspects of operating a large teaching hospital system
 
 <br>
 
@@ -66,7 +66,8 @@ _You may use your pointing device or fingers to zoom, pan and rotate each projec
 
 ## License
 
-All work herin is available on the [MIT license]( https://github.com/theo-armour/ucsf2/blob/master/LICENSE ), which is to say that it is all free and open source.
+All work herein is available on the [MIT license]( https://github.com/theo-armour/ucsf2/blob/master/LICENSE ), which is to say that it is all free and open source.
+
 In other words you can use it it any way you wish.
 
 <br>

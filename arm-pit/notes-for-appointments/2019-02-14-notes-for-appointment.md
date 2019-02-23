@@ -1,4 +1,4 @@
-# 2019-02-19 ~ Note for Appointment
+# 2019-02-14 ~ Note for Appointment
 
 
 _What's happening currently_
@@ -19,17 +19,20 @@ Weight
 ### Current devices/monitors
 
 Google Fit app
-Google Pixel 3 XL Phone monitors walking
-Fit-Index app and ES-26M scale monitor weight, BMI etc
+* Google Pixel 3 XL Phone monitors walking
+* Fit-Index app and ES-26M scale monitor weight, BMI etc
 
 Standalone/unconnected
-$10 pulse oximeter - nice but no wifi
+* $10 pulse oximeter - nice but no wifi
 
-I like the Fitbit but lose/put in washing machine too often/has issues connecting
+FitBit
+* I like the Fitbit but lose/put in washing machine too often/has issues connecting
+
 Current level of drive
-Very much in a 'don't break the chain' mode with my walking
-May or may not be good
-Need to add some non-walking moves
+* Very much in a 'don't break the chain' mode with my walking
+* May or may not be good
+* Need to add some non-walking moves
+
 
 ***
 
@@ -38,6 +41,7 @@ _What's wanted in the future_
 ## Building a ongoing coach/player effort
 
 ### Standing agendas for online meetups
+
 * What are the things we should discuss?
 	* Effective communication
 * Written, online, collaborative
@@ -54,13 +58,13 @@ _What to plan for_
 
 * Building up to a list of daily exercises/movement routines
 	* For the next 5/10 years?
-
 * Better ways of signaling the time for doing something
 	* Too easy to ignore the bell
 
 ### While Exercising
-Things to think about while I am walking up and down the hall
-Standing up straight, stretching neck, squeezing handles hard etc
+
+Things list of things to think about while I am walking up and down the hallNeed
+* Standing up straight, stretching neck, squeezing handles hard etc
 
 ### After exercising
 
