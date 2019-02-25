@@ -45,18 +45,18 @@ Things to track might include:
 * Heartbeat?
 * Blood pressure?
 
-Google Fit running on my phone seems to be doing a good. fail-free way. First app I've come accros that does this.
+Google Fit running on my phone seems to be doing a good. fail-free way. First app I've come across that does this.
 
 
 My second priority is to be able to share that data on the web
 
 * Data available via GitHub pages - ie a static host
 
-First step: Can capture historical data from Google Fit and send to a Google Sheet.
+First step: Can capture historical data from Google Fit and send to a Google Sheet. Next steps will include sharing the data here somewhere.
 
 <img src=arm-pit/images/google-fit-data-first-pass.png width=300 style="border:1px solid lightgray;" >
 
-The export of data is now at a very early but working! stage. I 've wanted to do something like this for years. Things finally have gotten easy enough for a derp like me to get going. The future should bring more data, more data types and more interesting presentations and reports.
+The export of data is now at a very early but working! stage. I've wanted to do something like this for years. Things finally have gotten easy enough for a derp like me to get going. The future should bring more data, more data types and more interesting presentations and reports.
 
 ### 2019-02-23
 

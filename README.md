@@ -2,13 +2,8 @@
 <span style="display: none"> [View as web page]( http://theo-armour.github.io/ucsf2/ 'View file as a web page' ) </span>
 <input type=button value="View file as source code on GitHub" onclick="window.location.href='https://github.com/theo-armour/ucsf2'" />
 
-[Theo Armour]( https://theo-armour.github.io ) &raquo;
 
-[UCSF2 Read Me]( https://theo-armour.github.io/ucsf2/index.html#README.md )
-===
-
-
-The ruminations and code snippets of a patient that relate to [UCSF]( https://ucsf.edu )
+# [UCSF2 Read Me]( https://theo-armour.github.io/ucsf2/index.html#README.md )
 
 
 ## See also [Theo Armour >> UCSF2 >> Issues]( https://github.com/theo-armour/ucsf2/issues )
