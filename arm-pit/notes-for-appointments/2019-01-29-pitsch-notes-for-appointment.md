@@ -1,7 +1,7 @@
 
-#Pitsch, Erica Adrienne, PT - 01/29/2019 3:00 PM PST
+# Pitsch, Erica Adrienne, PT - 01/29/2019 3:00 PM PST
 
-# Phase 1 exercises:
+## Phase 1 exercises:
 
 To add cardiovascular work to basic calisthenics (think post total hip exercises- elevator squats and leg lifts) increase the speed a little hold on, or add a weight to a backpack). KEEP THE WEIGHT LOW AND DO NOT HOLD YOUR BREATH!!! This will increase the pressure in your abdomen and on your hernia, so don't do it!
 
